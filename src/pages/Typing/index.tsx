@@ -12,7 +12,7 @@ import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
-import StarCard from '@/components/StarCard'
+// import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
@@ -129,7 +129,7 @@ const App: React.FC = () => {
 
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
-      <StarCard />
+{/*       <StarCard /> */}
       {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
