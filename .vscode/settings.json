@@ -1,6 +1,6 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "css.lint.unknownAtRules": "ignore",
   "css.validate": false,
@@ -11,17 +11,39 @@
   },
   "cSpell.words": [
     "alipay",
+    "compat",
+    "Dexie",
     "esae",
     "fontawesome",
     "fortawesome",
     "headlessui",
+    "heroicons",
+    "IELTS",
+    "immer",
+    "Majesticons",
+    "pako",
     "romaji",
     "svgr",
+    "tabler",
+    "tada",
     "tailwindcss",
+    "trivago",
     "ukphone",
+    "ungzip",
     "usphone",
     "vercel",
+    "Wechat",
     "Weixin",
-    "wordlist"
-  ]
+    "wordlist",
+    "Xiao",
+    "xiaohongshu"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

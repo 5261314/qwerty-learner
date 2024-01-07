@@ -1,5 +1,6 @@
-import { ReactNode, useState } from 'react'
 import { classNames } from '@/utils'
+import type { ReactNode } from 'react'
+import { useState } from 'react'
 
 const Tooltip = ({ children, content, className, placement = 'top' }: TooltipProps) => {
   const [visible, setVisible] = useState(false)
@@ -11,7 +12,7 @@ const Tooltip = ({ children, content, className, placement = 'top' }: TooltipPro
 
   return (
     <div className={classNames('relative', className)}>
-      <div onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}>
+      <div onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} onBlur={() => setVisible(false)}>
         {children}
       </div>
       <div

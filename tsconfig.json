@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite-plugin-svgr/client", "node"],
+    "types": ["node", "unplugin-icons/types/react"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
@@ -26,7 +26,15 @@
       // "@/resources/*": ["resources/*"],
       // "@/store/*": ["store/*"],
       // "@/utils/*": ["utils/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "camelCaseOnly"
+        }
+      }
+    ]
   },
   "include": ["src"]
 }
